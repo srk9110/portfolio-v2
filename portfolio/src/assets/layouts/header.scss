@@ -1,0 +1,31 @@
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    .contentsWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        max-width: 1830px;
+        padding: 20px 40px;
+        &.sticky {
+            background-color: black;
+            transition: background-color .3s ease-out;
+        }
+        .btnWrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            .btn {
+               text-align: center;
+               border-radius: 8px;
+               cursor: pointer;
+            }
+        }
+    }
+}

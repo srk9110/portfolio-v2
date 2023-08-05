@@ -1,0 +1,27 @@
+#skill {
+    .contentsWrap {
+        padding: 20px 0;
+        text-align: center;
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .contents {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 0;
+            flex-wrap: wrap;
+            .icon {
+                border: 1px solid #eee;
+                border-radius: 8px;
+                width: 120px;
+                height: 120px;
+                &.html {
+                    
+                }
+            }
+        }
+    }
+}
