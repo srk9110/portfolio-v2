@@ -1,0 +1,25 @@
+//path
+$path-image: "/images/";
+$path-icon: "/images/icons/";
+
+//image
+$main-bg: #{$path-image}#{"duck.jpg"};
+
+//icons
+$html: #{$path-icon}#{"html-icon.svg"};
+$css: #{$path-icon}#{"css-icon.svg"};
+$javascript: #{$path-icon}#{"javascript-icon.svg"};
+$sass: #{$path-icon}#{"sass-icon.svg"};
+$react: #{$path-icon}#{"react-icon.svg"};
+$typescript: #{$path-icon}#{"typescript-icon.svg"};
+$nextjs: #{$path-icon}#{"nextjs-icon.svg"};
+$git: #{$path-icon}#{"git-icon.svg"};
+$python: #{$path-icon}#{"python-icon.svg"};
+$selenium: #{$path-icon}#{"selenium-icon.svg"};
+$figma: #{$path-icon}#{"figma-icon.svg"};
+
+//screen
+$max-m: 767px;
+$min-t: 768px;
+$max-t: 1219px;
+$min-pc: 1220px;

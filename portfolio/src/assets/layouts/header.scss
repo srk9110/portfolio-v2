@@ -5,18 +5,27 @@
     left: 0;
     width: 100%;
     color: white;
-    .contentsWrap {
+    font-weight: bold;
+    .contents-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: transparent;
         max-width: 1830px;
         padding: 20px 40px;
-        &.sticky {
-            background-color: black;
-            transition: background-color .3s ease-out;
+        @include screen(m){
+            padding: 10px 30px;
         }
-        .btnWrap {
+        &.sticky {
+            background: white;
+            opacity: 0.8;
+            transition: background-color .3s ease-out;
+            color: rgb(39, 39, 39);
+        }
+        .logo {
+            cursor: pointer;
+        }
+        .btn-wrap {
             display: flex;
             justify-content: flex-end;
             align-items: center;

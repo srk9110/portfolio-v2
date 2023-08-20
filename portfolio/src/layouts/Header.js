@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from "react-router-dom";
 
 function Header(props){
     const [sticky, setSticky] = useState("");
@@ -9,22 +8,27 @@ function Header(props){
         return () => {
           window.removeEventListener("scroll", isSticky);
         };
-      }, []);
+    }, []);
 
-      const isSticky = () => {
-        const scrollTop = window.scrollY;
-        const stickyClass = scrollTop >= window.screen.height - 200 ? "sticky" : "";
-        setSticky(stickyClass);
-      };
+    const isSticky = () => {
+      const scrollTop = window.scrollY;
+      const stickyClass = scrollTop >= window.screen.height - 200 ? "sticky" : "";
+      setSticky(stickyClass);
+    };
+
+    const scroll = (key) => {
+      const element = document.querySelector(`#${key}`);
+      element.scrollIntoView({behavior: 'smooth', block: 'start'});
+    };
 
     return (
         <article id="header">
-            <div className={`contentsWrap ${sticky}`}>
-                <div className="logo">logo</div>
-                <div className="btnWrap">
-                    <div className="btn">skill</div>
-                    <div className="btn">project</div>
-                    <div className="btn">contact</div>
+            <div className={`contents-wrap ${sticky}`}>
+                <div className="logo" onClick={() => scroll("main")}>KSR's PORTFOLIO</div>
+                <div className="btn-wrap">
+                    <div className="btn" onClick={() => scroll("skill")}>SKILL</div>
+                    <div className="btn" onClick={() => scroll("project")}>PROJECT</div>
+                    <div className="btn" onClick={() => scroll("contact")}>CONTACT</div>
                 </div>
             </div>
         </article>

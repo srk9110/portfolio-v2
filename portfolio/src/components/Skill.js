@@ -9,12 +9,14 @@ function Skill(props){
             <h2>SKILL</h2>
             {
                 skillList.length && skillList.map((skill, index) => (
-                    <div className="contentsWrap" key={`skill_${index}`}>
-                        <div className="title">{skill.title}</div>
+                    <div className="contents-wrap" key={`skill_${index}`}  data-aos="zoom-in" data-aos-duration="1500">
+                        <div className="title">{skill.type}</div>
                         <div className="contents">
                         {
                             skill.data?.length && skill.data.map((item, itemIndex) => (
-                                <div className={`icon ${item.name}`} key={`item_${itemIndex}`}/>  
+                                <div className="icon-wrap" key={`item_${itemIndex}`}>
+                                    <div className={`icon ${item.name}`}/>
+                                </div>  
                             ))
                         }
                         </div>
