@@ -34,7 +34,7 @@ function Project(props){
                             <div className="type-wrap">
                             {
                                 project.type.length && project.type.map((item, typeIndex) => (
-                                    <div className="type">{item}</div>
+                                    <div className="type" key={typeIndex}>{item}</div>
                                 ))
                             }
                             </div>

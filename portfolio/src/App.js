@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 
 //layout
 import Header from './layouts/Header';
+import Up from './layouts/Up';
 
 //component
 import Main from './components/Main';
@@ -18,6 +19,7 @@ function App(){
     return (
         <div id="mainWrap">
             <Header/>
+            <Up/>
             <Routes>
                 <Route path='/' element={<Main/>}/>
             </Routes>

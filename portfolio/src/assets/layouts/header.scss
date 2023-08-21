@@ -6,6 +6,9 @@
     width: 100%;
     color: white;
     font-weight: bold;
+    @include screen(m){
+        box-shadow: 0px 4px 6px #74747496;
+    }
     .contents-wrap {
         display: flex;
         justify-content: space-between;
@@ -15,12 +18,17 @@
         padding: 20px 40px;
         @include screen(m){
             padding: 10px 30px;
+            background: white;
+            color: rgb(39, 39, 39);
         }
         &.sticky {
             background: white;
             opacity: 0.8;
             transition: background-color .3s ease-out;
             color: rgb(39, 39, 39);
+            @include screen(m){
+                opacity: 1;
+            }
         }
         .logo {
             cursor: pointer;
@@ -30,10 +38,39 @@
             justify-content: flex-end;
             align-items: center;
             gap: 20px;
+            @include screen(m) {
+                display: none;
+            }
             .btn {
                text-align: center;
                border-radius: 8px;
                cursor: pointer;
+            }
+        }
+        .side-btn {
+            display: none;
+            cursor: pointer;
+            @include screen(m){
+                display: block;
+            }
+        }
+    }
+    .sidebar {
+        background: white;
+        color: rgb(39, 39, 39);
+        height: 0px;
+        transition: height 0.2s ease;
+        overflow: hidden;
+        &.toggle {
+            height: 135px;
+        }
+        .btn-wrap {
+            padding: 20px 30px;
+        }
+        .btn {
+            cursor: pointer;
+            &:not(:last-child){
+                margin-bottom: 16px;
             }
         }
     }
