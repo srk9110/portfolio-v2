@@ -43,6 +43,12 @@
             color: white;
             text-align: center;
             cursor: pointer;
+            animation: fadein .5s ease-in;
+            opacity: 0;
+            animation: fadein .5s ease-in .8s forwards; 
+            -moz-animation: fadein .5s ease-in .8s forwards; /* Firefox */
+            -webkit-animation: fadein .5s ease-in .8s forwards; /* Safari and Chrome */
+            -o-animation: fadein .5s ease-in .8s forwards; /* Opera */
             .scroll-down {
                 margin-bottom: 10px;
                 font-weight: bold;
