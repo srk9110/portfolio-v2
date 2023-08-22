@@ -4,8 +4,8 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        margin: 30px auto;
-        max-width: 65rem;
+        margin: 0 auto;
+        max-width: 80rem;
         .contents-wrap {
             background-color: white;
             border: 1px solid #eee;
@@ -42,18 +42,21 @@
             .contents {
                 display: flex;
                 gap: 20px;
+                position: relative;
                 @include screen(t, m) {
                     flex-direction: column;
                     align-items: center;
                     gap: 35px;
                 }
                 .slick-slider {
+                    position: unset;
                     width: 50%;
                     @include screen(t, m) {
                         width: 100%;
                     }
                     .slick-slide {
                         position: relative;
+                        height: inherit !important;
                         .project-image-wrap {
                             position: relative;
                             width: 100%;
@@ -78,6 +81,10 @@
                         justify-content: center;
                         bottom: -20px;
                         gap: 6px;
+                        width: 50%;
+                        @include screen(t, m) {
+                            width: 100%;
+                        }
                         li {
                             width: 6px;
                             height: 6px;
@@ -121,6 +128,7 @@
                             border-bottom: 1px solid #eee;
                             padding-bottom: 14px;
                             margin-bottom: 10px;
+                            line-height: 26px;
                             @include screen(m) {
                                 align-items: flex-start;
                             }
@@ -146,6 +154,7 @@
                         }
                         .work {
                             word-break: keep-all;
+                            line-height: 26px;
                         }
                         .tag-wrap {
                             display: flex;

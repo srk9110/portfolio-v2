@@ -6,10 +6,10 @@ function Skill(props){
 
     return (
         <article id="skill" className="common">
-            <h2>SKILL</h2>
+            <h2>SKILLS</h2>
             {
                 skillList.length && skillList.map((skill, index) => (
-                    <div className="contents-wrap" key={`skill_${index}`}  data-aos="zoom-in" data-aos-duration="1500">
+                    <div className="contents-wrap" key={`skill_${index}`} data-aos="zoom-in" data-aos-duration="1000">
                         <div className="title">{skill.type}</div>
                         <div className="contents">
                         {

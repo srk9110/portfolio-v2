@@ -1,0 +1,53 @@
+#aboutMe {
+    text-align: center;
+    .text-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+        color: rgb(68, 68, 68);
+        @include screen(m){
+            display: inline-block;
+            gap: 10px;
+        }
+        .text {
+            display: inline;
+            word-break: keep-all;
+            font-weight: 500;
+            line-height: 28px;
+            max-width: 580px;
+            @include screen(t, m){
+                max-width: 400px;
+            }
+        }
+        .quote {
+            width: 54px;
+            height: 54px;
+            opacity: 0.6;
+            margin: 0 16px;
+            @include screen(m){
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: 0;
+            }
+            &.left {
+                background: url($quote-left) no-repeat center;
+                background-size: cover;
+                @include screen(m){
+                    margin-bottom: 10px;
+                }
+            }
+            &.right {
+                background: url($quote-right) no-repeat center;
+                background-size: cover;
+                @include screen(m){
+                    float:right; 
+                    clear:right;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

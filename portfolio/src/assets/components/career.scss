@@ -1,0 +1,37 @@
+#career {
+    .contents-wrap {
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            @include screen(m){
+                flex-direction: column;    
+            }
+            .logo {
+                background: url($linco-logo) no-repeat center;
+                background-size: cover;
+                width: 148px;
+                height: 148px;
+                border-radius: 50%;
+                border: 1px solid #eee;
+                @include screen(m){
+                    margin: 0 auto;
+                }
+            }
+            .line {
+                border-left: 1px solid #b8b8b8;
+                @include screen(m){
+                    display: none;
+                }
+            }
+            .info-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .date {
+                    color: #b8b8b8;
+                }
+            }
+        }
+    }
+}

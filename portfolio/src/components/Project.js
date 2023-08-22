@@ -11,7 +11,7 @@ const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: false
   }
 
 function Project(props){
@@ -23,7 +23,7 @@ function Project(props){
 
     return (
         <article id="project" className="common">
-            <h2>PROJECT</h2>
+            <h2>PROJECTS</h2>
             <div className="flexWrap">
             {
                 projects.length && projects.map((project, index) => (

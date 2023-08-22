@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Skill from './Skill';
 import Project from './Project';
-import Contact from './Contact';
+import AboutMe from './AboutMe';
+import Career from './Career';
 import {scroll} from '../utils/scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +15,7 @@ function Main(props){
                     <h2 className="title">FRONT-END DEV</h2>
                     <div className="sub-title">PORTFOLIO</div>
                 </div>
-                <div className="scroll-down-wrap" onClick={() => scroll("skill")}>
+                <div className="scroll-down-wrap" onClick={() => scroll("aboutMe")}>
                     <div className="scroll-down">SCROLL DOWN</div>
                     <div className="down-icon">
                         <FontAwesomeIcon icon={faChevronDown} style={{color: "#ffffff",}} />
@@ -22,9 +23,10 @@ function Main(props){
                     </div>
                 </div>
             </div>
+            <AboutMe/>
+            <Career/>
             <Skill/>
             <Project/>
-            <Contact/>
         </article>
     )
 }

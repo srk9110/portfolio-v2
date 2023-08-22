@@ -1,28 +1,45 @@
 #main {
     .image-wrap {
-        height: 100vh;
         width: 100%;
-        background: url($main-bg) no-repeat center;
-        background-size: cover;
+        height: 100vh;
+        background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         position: relative;
+        z-index: 0;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            content: "";
+            display: block;
+            background: url($main-bg) no-repeat center;
+            animation: changeHeight 1.5s ease-out forwards;
+            -moz-animation: changeHeight 1.5s ease-out forwards;
+            -webkit-animation: changeHeight 1.5s ease-out forwards;
+            -o-animation: changeHeight 1.5s ease-out forwards;
+            overflow: hidden;
+            object-fit: cover;
+            z-index: 1;
+        }
         .title-wrap {
             text-align: center;
             word-break: keep-all;
             font-weight: bold;
+            z-index: 2;
             .title {
-                font-size: 5rem;
+                font-size: 8rem;
                 @include screen(m){
                     font-size: 3rem;
                 }
                 color: white;
-                animation: fadein .5s ease-in;
-                -moz-animation: fadein .5s ease-in; /* Firefox */
-                -webkit-animation: fadein .5s ease-in; /* Safari and Chrome */
-                -o-animation: fadein .5s ease-in; /* Opera */
+                animation: fadeIn .5s ease-in;
+                -moz-animation: fadeIn .5s ease-in; /* Firefox */
+                -webkit-animation: fadeIn .5s ease-in; /* Safari and Chrome */
+                -o-animation: fadeIn .5s ease-in; /* Opera */
             }
             .sub-title {
                 font-size: 3rem;
@@ -31,24 +48,24 @@
                 }
                 color: white;
                 opacity: 0;
-                animation: fadein .5s ease-in .5s forwards; 
-                -moz-animation: fadein .5s ease-in .5s forwards; /* Firefox */
-                -webkit-animation: fadein .5s ease-in .5s forwards; /* Safari and Chrome */
-                -o-animation: fadein .5s ease-in .5s forwards; /* Opera */
+                animation: fadeIn .5s ease-in .5s forwards; 
+                -moz-animation: fadeIn .5s ease-in .5s forwards; /* Firefox */
+                -webkit-animation: fadeIn .5s ease-in .5s forwards; /* Safari and Chrome */
+                -o-animation: fadeIn .5s ease-in .5s forwards; /* Opera */
             }
         }
         .scroll-down-wrap {
+            z-index: 2;
             position: absolute;
             bottom: 80px;
             color: white;
             text-align: center;
             cursor: pointer;
-            animation: fadein .5s ease-in;
             opacity: 0;
-            animation: fadein .5s ease-in .8s forwards; 
-            -moz-animation: fadein .5s ease-in .8s forwards; /* Firefox */
-            -webkit-animation: fadein .5s ease-in .8s forwards; /* Safari and Chrome */
-            -o-animation: fadein .5s ease-in .8s forwards; /* Opera */
+            animation: fadeIn .5s ease-in .8s forwards; 
+            -moz-animation: fadeIn .5s ease-in .8s forwards; /* Firefox */
+            -webkit-animation: fadeIn .5s ease-in .8s forwards; /* Safari and Chrome */
+            -o-animation: fadeIn .5s ease-in .8s forwards; /* Opera */
             .scroll-down {
                 margin-bottom: 10px;
                 font-weight: bold;
@@ -67,11 +84,16 @@
                     &:nth-child(2){
                         opacity: 0;
                         animation: scrollDown 1.2s 0.6s linear infinite forwards;
+                        -moz-animation: scrollDown 1.2s 0.6s linear infinite forwards;
+                        -webkit-animation: scrollDown 1.2s 0.6s linear infinite forwards;
+                        -o-animation: scrollDown 1.2s 0.6s linear infinite forwards;
                     }
                 };
             }
         }
-        @keyframes fadein {
+
+        //fadeIn
+        @keyframes fadeIn {
             from {
                 opacity: 0;
             }
@@ -79,7 +101,7 @@
                 opacity: 1;
             }
         }
-        @-moz-keyframes fadein { /* Firefox */
+        @-moz-keyframes fadeIn { /* Firefox */
             from {
                 opacity: 0;
             }
@@ -87,7 +109,7 @@
                 opacity: 1;
             }
         }
-        @-webkit-keyframes fadein { /* Safari and Chrome */
+        @-webkit-keyframes fadeIn { /* Safari and Chrome */
             from {
                 opacity: 0;
             }
@@ -95,7 +117,7 @@
                 opacity: 1;
             }
         }
-        @-o-keyframes fadein { /* Opera */
+        @-o-keyframes fadeIn { /* Opera */
             from {
                 opacity: 0;
             }
@@ -104,6 +126,7 @@
             }
         }
 
+        //scrollDown
         @keyframes scrollDown {
             0% {
                 opacity: 0;
@@ -118,6 +141,82 @@
                 transform: translateY(100%);
             }
         }
-        
+        @-moz-keyframes scrollDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 0.4;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+        @-webkit-keyframes scrollDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 0.4;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+        @-o-keyframes scrollDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            50% {
+                opacity: 0.4;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+
+        //changeHeight
+        @keyframes changeHeight {
+            0% {
+                height: 0vh;
+            }
+            100% {
+                height: 100vh;
+            }
+        }
+        @-moz-keyframes changeHeight {
+            0% {
+                height: 0vh;
+            }
+            100% {
+                height: 100vh;
+            }
+        }
+        @-webkit-keyframes changeHeight {
+            0% {
+                height: 0vh;
+            }
+            100% {
+                height: 100vh;
+            }
+        }
+        @-o-keyframes changeHeight {
+            0% {
+                height: 0vh;
+            }
+            100% {
+                height: 100vh;
+            }
+        }
+
     }
 }

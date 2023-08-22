@@ -42,9 +42,9 @@
                 display: none;
             }
             .btn {
-               text-align: center;
-               border-radius: 8px;
-               cursor: pointer;
+                text-align: center;
+                border-radius: 8px;
+                cursor: pointer;
             }
         }
         .side-btn {
@@ -62,7 +62,7 @@
         transition: height 0.2s ease;
         overflow: hidden;
         &.toggle {
-            height: 135px;
+            height: 164px;
         }
         .btn-wrap {
             padding: 20px 30px;

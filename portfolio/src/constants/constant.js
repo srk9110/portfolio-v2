@@ -122,7 +122,7 @@ const constant = {
             workPlace: "Linco",
             date: "2021.08 ~ 2022.06",
             skill: ["react", "scss", "Laravel-blade"],
-            desc: "출연 아티스트 및 제작 스태프 구인구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 제작 관리할 수 있습니다.",
+            desc: "출연 아티스트 및 제작 스태프 구인구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 관리할 수 있습니다.",
             link: "https://clkr.co.kr",
             imagePath: ["../images/project/clkr-1.png", "../images/project/clkr-2.png", "../images/project/clkr-3.png", "../images/project/clkr-4.png", "../images/project/clkr-5.png"]
         },

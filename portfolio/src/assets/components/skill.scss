@@ -1,18 +1,18 @@
 #skill {
     .contents-wrap {
-        padding: 20px 0;
         text-align: center;
+        padding-bottom: 50px;
         .title {
             font-weight: 600;
             font-size: 18px;
             color: #888888;
+            padding-bottom: 25px;
         }
         .contents {
             display: flex;
             gap: 30px;
             align-items: center;
             justify-content: center;
-            padding: 25px 0;
             flex-wrap: wrap;
             .icon-wrap {
                 position: relative;
