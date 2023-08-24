@@ -1,6 +1,7 @@
 import React from 'react';
+import {goUrl} from '../utils/goUrl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function AboutMe(props){
     return(
@@ -13,7 +14,7 @@ function AboutMe(props){
                             <FontAwesomeIcon icon={faEnvelope} style={{color: "#000000",}} />
                         </a>
                     </div>
-                    <div className="git icon">
+                    <div className="git icon" onClick={() => {goUrl("https://github.com/srk9110")}}>
                     </div>
                 </div>
                 <div className="text-wrap">

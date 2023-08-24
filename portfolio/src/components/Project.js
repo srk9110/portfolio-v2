@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import CONSTANT from '../constants/constant';
+import { goUrl } from '../utils/goUrl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faBuilding, faPenToSquare, faCode, faLink, faCheck, faHouse,
     faLock, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
@@ -16,10 +17,6 @@ const settings = {
 
 function Project(props){
     const projects = CONSTANT.projects;
-    
-    const goUrl = link => {
-        window.open(`${link}`, "_blank");
-    };
 
     return (
         <article id="project" className="common">
