@@ -6,22 +6,25 @@
         gap: 30px;
         align-items: center;
         justify-content: center;
+        margin-bottom: 30px;
         @include screen(m){
             flex-direction: column;
         }
         .icon {
-            display: flex;
-            gap: 20px;
             &.git {
                 background: url($github) no-repeat center;
                 background-size: cover;
-                width: 24px;
-                height: 24px;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
             }
             svg {
-                height: 24px;
+                height: 48px;
                 display: inline-block;
             }
         }
+    }
+    .right {
+        text-align: center;
     }
 }

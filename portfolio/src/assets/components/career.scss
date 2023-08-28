@@ -3,33 +3,45 @@
         .content {
             display: flex;
             justify-content: center;
-            gap: 3rem;
             @include screen(m){
                 flex-direction: column;    
             }
-            .logo {
-                background: url($linco-logo) no-repeat center;
-                background-size: cover;
-                width: 148px;
-                height: 148px;
-                border-radius: 50%;
-                border: 1px solid #eee;
+            .logo-wrap {
+                width: 40%;
                 @include screen(m){
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .logo {
+                    background: url($linco-logo) no-repeat center;
+                    background-size: cover;
+                    width: 148px;
+                    height: 148px;
+                    border-radius: 50%;
+                    border: 1px solid #eee;
                     margin: 0 auto;
                 }
             }
-            .line {
-                border-left: 1px solid #b8b8b8;
-                @include screen(m){
-                    display: none;
-                }
-            }
             .info-wrap {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+                width: 50%;
+                @include screen(m){
+                    width: 100%;
+                }
+                .company {
+                    margin-bottom: 8px;
+                }
                 .date {
                     color: #b8b8b8;
+                    margin-bottom: 16px;
+                }
+                .info {
+                    .title {
+                        &::before {
+                            content: "";
+                            border-left: 5px solid black;
+                            margin-right: 8px;
+                        }
+                    }
                 }
             }
         }
