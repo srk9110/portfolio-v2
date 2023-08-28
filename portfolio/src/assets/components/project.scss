@@ -52,6 +52,7 @@
                     position: unset;
                     width: 50%;
                     @include screen(t, m) {
+                        position: relative;
                         width: 100%;
                     }
                     .slick-slide {

@@ -4,7 +4,7 @@ function AboutMe(props){
     return(
         <article id="aboutMe" className="common">
             <h2>ABOUT ME</h2>
-            <div className="contents-wrap" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="contents-wrap" data-aos="zoom-in">
                 <div className="text-wrap">
                     <div className="quote left"/>
                     <div className="text">

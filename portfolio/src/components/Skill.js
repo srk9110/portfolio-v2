@@ -9,7 +9,7 @@ function Skill(props){
             <h2>SKILLS</h2>
             {
                 skillList.length && skillList.map((skill, index) => (
-                    <div className="contents-wrap" key={`skill_${index}`} data-aos="zoom-in" data-aos-duration="1000">
+                    <div className="contents-wrap" key={`skill_${index}`} data-aos="zoom-in">
                         <div className="title">{skill.type}</div>
                         <div className="contents">
                         {

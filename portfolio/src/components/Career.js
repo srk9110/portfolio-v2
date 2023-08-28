@@ -4,12 +4,12 @@ function Career(props){
     return(
         <article id="career" className="common">
             <h2>CAREER</h2>
-            <div className="contents-wrap">
+            <div className="contents-wrap" data-aos="zoom-in-up">
                 <div className="content">
-                    <div className="logo-wrap" data-aos="fade-up-right">
+                    <div className="logo-wrap">
                         <div className="logo"/>
                     </div>
-                    <div className="info-wrap" data-aos="fade-up-left" data-aos-delay="500">
+                    <div className="info-wrap">
                         <h3 className="company">(주) Linco</h3>
                         <div className="date">2021.07 ~ 2023.08</div>
                         <div className="info">
