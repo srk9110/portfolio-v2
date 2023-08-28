@@ -7,9 +7,6 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
-        @include screen(m){
-            flex-direction: column;
-        }
         .icon {
             &.git {
                 background: url($github) no-repeat center;
