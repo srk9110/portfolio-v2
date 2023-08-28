@@ -1,0 +1,27 @@
+#footer {
+    background-color: #EEEEEE;
+    color: #222831;
+    .profile-wrap {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        @include screen(m){
+            flex-direction: column;
+        }
+        .icon {
+            display: flex;
+            gap: 20px;
+            &.git {
+                background: url($github) no-repeat center;
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+            }
+            svg {
+                height: 24px;
+                display: inline-block;
+            }
+        }
+    }
+}

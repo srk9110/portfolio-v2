@@ -1,22 +1,10 @@
 import React from 'react';
-import {goUrl} from '../utils/goUrl';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function AboutMe(props){
     return(
         <article id="aboutMe" className="common">
             <h2>ABOUT ME</h2>
             <div className="contents-wrap" data-aos="zoom-in" data-aos-duration="1000">
-                <div className="profile-wrap">
-                    <div className="mail icon">
-                        <a href="mailto:srk911028@gmail.com">
-                            <FontAwesomeIcon icon={faEnvelope} style={{color: "#000000",}} />
-                        </a>
-                    </div>
-                    <div className="git icon" onClick={() => {goUrl("https://github.com/srk9110")}}>
-                    </div>
-                </div>
                 <div className="text-wrap">
                     <div className="quote left"/>
                     <div className="text">

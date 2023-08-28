@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 //layout
 import Header from './layouts/Header';
 import Up from './layouts/Up';
+import Footer from './layouts/Footer';
 
 //component
 import Main from './components/Main';
@@ -23,6 +24,7 @@ function App(){
             <Routes>
                 <Route path='/' element={<Main/>}/>
             </Routes>
+            <Footer/>
         </div>
     )
 }
