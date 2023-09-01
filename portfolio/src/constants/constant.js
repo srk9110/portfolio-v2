@@ -59,7 +59,7 @@ const constant = {
             skill: ["react", "scss", "jquery", "Laravel-blade"],
             desc: "위젯을 통한 리뷰 작성과 조회, 리뷰 관리 시스템을 제공하는 cafe24 리뷰 관리 서비스입니다.",
             link: "https://co-co.co.kr/",
-            imagePath: ["../images/project/coco-1.png", "../images/project/coco-2.png", "../images/project/coco-3.png", "../images/project/coco-4.png", "../images/project/coco-5.png", "../images/project/coco-6.png", "../images/project/coco-7.png", "../images/project/coco-8.png"]
+            imagePath: ["/images/project/coco-1.png", "/images/project/coco-2.png", "/images/project/coco-3.png", "/images/project/coco-4.png", "/images/project/coco-5.png", "/images/project/coco-6.png", "/images/project/coco-7.png", "/images/project/coco-8.png"]
         },  
         {
             id: 2,
@@ -74,7 +74,7 @@ const constant = {
             link: "https://milink.co.kr/",
             linkAnd: "https://play.google.com/store/apps/details?id=com.linco.milink&hl=ko",
             linkIos: "https://apps.apple.com/us/app/%EB%A7%88%EC%9D%B4%EB%A7%81%ED%81%AC-milink/id1671983725",
-            imagePath: ["../images/project/milink-1.png", "../images/project/milink-2.png", "../images/project/milink-3.png", "../images/project/milink-4.png", "../images/project/milink-5.png", "../images/project/milink-6.png", "../images/project/milink-7.png", "../images/project/milink-8.png"]
+            imagePath: ["/images/project/milink-1.png", "/images/project/milink-2.png", "/images/project/milink-3.png", "/images/project/milink-4.png", "/images/project/milink-5.png", "/images/project/milink-6.png", "/images/project/milink-7.png", "/images/project/milink-8.png"]
         },           
         {
             id: 3,
@@ -89,7 +89,7 @@ const constant = {
             link: "https://mibook.co.kr/",
             linkAnd: "https://play.google.com/store/apps/details?id=com.linco.mibook&hl=ko",
             linkIos: "https://apps.apple.com/us/app/%EB%A7%88%EC%9D%B4%EB%B6%81-mibook/id1666480995",
-            imagePath: ["../images/project/mibook-1.png", "../images/project/mibook-2.png", "../images/project/mibook-3.png", "../images/project/mibook-4.png", "../images/project/mibook-5.png", "../images/project/mibook-6.png"]
+            imagePath: ["/images/project/mibook-1.png", "/images/project/mibook-2.png", "/images/project/mibook-3.png", "/images/project/mibook-4.png", "/images/project/mibook-5.png", "/images/project/mibook-6.png"]
         },    
         {
             id: 4,
@@ -103,7 +103,7 @@ const constant = {
             desc: "대부업체와 이용자간의 쉽고 빠른 대출 성사를 위한 대부정보 플랫폼 서비스입니다.",
             linkAnd: "https://play.google.com/store/apps/details?id=com.wakib.ssonda&hl=ko-KR",
             linkIos: "https://apps.apple.com/KR/app/id6444467376?mt=8",
-            imagePath: ["../images/project/ssonda-1.png", "../images/project/ssonda-2.png", "../images/project/ssonda-3.png", "../images/project/ssonda-4.png"]
+            imagePath: ["/images/project/ssonda-1.png", "/images/project/ssonda-2.png", "/images/project/ssonda-3.png", "/images/project/ssonda-4.png"]
         },      
         {
             id: 5,
@@ -118,7 +118,7 @@ const constant = {
             link: "http://13.124.117.49",
             linkAnd: "https://play.google.com/store/apps/details?id=com.lumanlab.goodtime&hl=ko-KR",
             linkIos: "https://apps.apple.com/ua/app/%EA%B5%BF%ED%83%80%EC%9E%84/id1639965955",
-            imagePath: ["../images/project/goodTime-1.png", "../images/project/goodTime-2.png", "../images/project/goodTime-3.png", "../images/project/goodTime-4.png"]
+            imagePath: ["/images/project/goodTime-1.png", "/images/project/goodTime-2.png", "/images/project/goodTime-3.png", "/images/project/goodTime-4.png"]
         },
         {
             id: 6,
@@ -131,7 +131,7 @@ const constant = {
             skill: ["react", "scss",  "jquery", "Laravel-blade"],
             desc: "출연 아티스트 및 제작 스태프 구인구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 관리할 수 있습니다.",
             link: "https://clkr.co.kr",
-            imagePath: ["../images/project/clkr-1.png", "../images/project/clkr-2.png", "../images/project/clkr-3.png", "../images/project/clkr-4.png", "../images/project/clkr-5.png"]
+            imagePath: ["/images/project/clkr-1.png", "/images/project/clkr-2.png", "/images/project/clkr-3.png", "/images/project/clkr-4.png", "/images/project/clkr-5.png"]
         },
         {
             id: 7,
@@ -144,7 +144,7 @@ const constant = {
             skill: ["react", "scss"],
             desc: "코로나 백신을 접종한 코인 보유자를 대상으로한 호텔예약 이벤트 페이지입니다.",
             link: "https://greatclover.com",
-            imagePath: ["../images/project/clover-1.png", "../images/project/clover-2.png", "../images/project/clover-3.png", "../images/project/clover-4.png"]
+            imagePath: ["/images/project/clover-1.png", "/images/project/clover-2.png", "/images/project/clover-3.png", "/images/project/clover-4.png"]
         },                
     ]
 };

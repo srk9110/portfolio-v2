@@ -13,7 +13,7 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false
-  }
+    }
 
 function Project(props){
     const projects = CONSTANT.projects;
@@ -41,7 +41,7 @@ function Project(props){
                             {
                                 project.imagePath.length && project.imagePath.map((image, imageIndex) => (
                                     <div className="project-image-wrap" key={imageIndex}>
-                                        <div className="project-image" style={{backgroundImage: `url(${image})`}}/>
+                                        <div className="project-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${image})`}}/>
                                     </div>
                                 ))
                             }
