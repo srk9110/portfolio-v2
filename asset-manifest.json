@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio-v2/static/css/main.4ca32449.css",
+    "main.js": "/portfolio-v2/static/js/main.6918587b.js",
+    "static/media/bg.png": "/portfolio-v2/static/media/bg.5985fb6c37cad73bebcb.png",
+    "static/media/linco.PNG": "/portfolio-v2/static/media/linco.9f5647e6fad9f6066660.PNG",
+    "static/media/quote-left.svg": "/portfolio-v2/static/media/quote-left.832c905e1e63a5a951fc.svg",
+    "static/media/quote-right.svg": "/portfolio-v2/static/media/quote-right.e22a71a85b107891dc86.svg",
+    "static/media/sass-icon.svg": "/portfolio-v2/static/media/sass-icon.3572f53ec4f404e921a9.svg",
+    "static/media/react-icon.svg": "/portfolio-v2/static/media/react-icon.19465659ecf7a1122618.svg",
+    "static/media/selenium-icon.svg": "/portfolio-v2/static/media/selenium-icon.6b7de832e0e93fb26e53.svg",
+    "static/media/typescript-icon.svg": "/portfolio-v2/static/media/typescript-icon.f3bc0fd998dea6b12669.svg",
+    "static/media/python-icon.svg": "/portfolio-v2/static/media/python-icon.e78f188fa5e62ee2613d.svg",
+    "static/media/html-icon.svg": "/portfolio-v2/static/media/html-icon.04ad4ab83f740c867197.svg",
+    "static/media/css-icon.svg": "/portfolio-v2/static/media/css-icon.926611385610b2f0ba73.svg",
+    "static/media/slick.svg": "/portfolio-v2/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio-v2/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio-v2/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/javascript-icon.svg": "/portfolio-v2/static/media/javascript-icon.1d3d28798f08ea1ed7cd.svg",
+    "static/media/figma-icon.svg": "/portfolio-v2/static/media/figma-icon.7de1da122c5d109880fe.svg",
+    "static/media/slick.woff": "/portfolio-v2/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/github-mark.svg": "/portfolio-v2/static/media/github-mark.6fa18895f6e6c7772cab.svg",
+    "index.html": "/portfolio-v2/index.html",
+    "static/media/nextjs-icon.svg": "/portfolio-v2/static/media/nextjs-icon.500759aba71b93b9027f.svg",
+    "main.4ca32449.css.map": "/portfolio-v2/static/css/main.4ca32449.css.map",
+    "main.6918587b.js.map": "/portfolio-v2/static/js/main.6918587b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ca32449.css",
+    "static/js/main.6918587b.js"
+  ]
+}
