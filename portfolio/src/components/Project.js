@@ -41,7 +41,7 @@ function Project(props){
                             {
                                 project.imagePath.length && project.imagePath.map((image, imageIndex) => (
                                     <div className="project-image-wrap" key={imageIndex}>
-                                        <div className="project-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${image})`}}/>
+                                        <div className="project-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}${image})`}}/>
                                     </div>
                                 ))
                             }
