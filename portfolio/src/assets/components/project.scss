@@ -144,6 +144,9 @@
                         .info-title-wrap {
                             display: flex;
                             align-items: center;
+                            svg {
+                                margin: 0 10px 0 0;
+                            }
                             .title {
                                 width: 120px;
                                 font-weight: bold;
@@ -186,6 +189,7 @@
                                 cursor: pointer;
                                 svg {
                                     width: 20px;
+                                    margin: 0 10px 0 0;
                                 }
                             }
                         }
