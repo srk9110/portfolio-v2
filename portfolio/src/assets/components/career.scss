@@ -36,9 +36,11 @@
                 }
                 .info {
                     .title {
+                        color: $semi-title;
+                        font-weight: 600;
                         &::before {
                             content: "";
-                            border-left: 5px solid black;
+                            border-left: 5px solid $semi-title;
                             margin-right: 8px;
                         }
                     }

@@ -139,7 +139,7 @@
                         }
                         svg {
                             width: 16px;
-                            margin-right: 10px;
+                            margin: 3px 10px 0 0;
                         }
                         .info-title-wrap {
                             display: flex;
@@ -147,6 +147,7 @@
                             .title {
                                 width: 120px;
                                 font-weight: bold;
+                                color: $title;
                                 @include screen(t, m) {
                                     width: 85px;
                                     flex-shrink: 0;
@@ -171,6 +172,9 @@
                                 }
                                 &.scss {
                                     background-color: #cc6699;
+                                }
+                                &.jquery {
+                                    background-color: #29609a;
                                 }
                             }
                         }

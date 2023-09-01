@@ -5,7 +5,7 @@
         .title {
             font-weight: 600;
             font-size: 18px;
-            color: #888888;
+            color: $semi-title;
             padding-bottom: 25px;
         }
         .contents {
@@ -54,7 +54,7 @@
                         background-image: url($nextjs);
                     }
                     &.git {
-                        background-image: url($git);
+                        background-image: url($github);
                     }
                     &.python {
                         background-image: url($python);
@@ -64,6 +64,9 @@
                     }
                     &.figma {
                         background-image: url($figma);
+                    }
+                    &.jquery {
+                        background-image: url($jquery);
                     }
                 }
             }

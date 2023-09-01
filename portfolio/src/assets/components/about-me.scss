@@ -1,12 +1,54 @@
 #aboutMe {
     .contents-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        .info-wrap {
+            display: flex;
+            flex-direction: column;
+            max-width: 812px;
+            width: 100%;
+            gap: 30px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            @include screen(t, m){
+                max-width: 736px;
+            }
+            .info {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                width: 36%;
+                @include screen(m){
+                    width: 100%;
+                }
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #616161;
+                    word-break: keep-all;
+                }
+            }
+        }
+        .divide {
+            display: flex;
+            gap: 16px;
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
         .text-wrap {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 30px;
             position: relative;
-            color: rgb(68, 68, 68);
             @include screen(m){
                 display: inline-block;
                 gap: 10px;
@@ -17,17 +59,18 @@
                 font-weight: 500;
                 line-height: 28px;
                 max-width: 680px;
+                @include screen(t, m){
+                    max-width: 580px;
+                }
             }
             .quote {
-                width: 48px;
-                height: 48px;
+                width: 36px;
+                height: 36px;
                 opacity: 0.6;
-                margin: 0 16px;
                 @include screen(m){
                     display: block;
                     width: 30px;
                     height: 30px;
-                    margin: 0;
                 }
                 &.left {
                     background: url($quote-left) no-repeat center;

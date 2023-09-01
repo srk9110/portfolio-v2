@@ -6,8 +6,8 @@ import {goUrl} from '../utils/goUrl';
 function Footer() {
 
     return (
-        <article id="footer" className="common">
-            <div className="profile-wrap">
+        <article id="footer">
+            <div className="contact-wrap">
                 <div className="git icon" onClick={() => {goUrl("https://github.com/srk9110")}}/>
                 <div className="mail icon">
                     <a href="mailto:srk911028@gmail.com">

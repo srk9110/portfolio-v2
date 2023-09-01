@@ -17,6 +17,7 @@ h2 {
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
     font-size: 32px;
+    color: $title;
 }
 
 h3 {
@@ -32,6 +33,11 @@ h3 {
     h2 {
         padding-bottom: 40px;
     }
+    color: $text;
+}
+
+a {
+    text-decoration: none;
 }
 
 iframe {

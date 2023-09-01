@@ -14,13 +14,13 @@ $sass: #{$path-icon}#{"sass-icon.svg"};
 $react: #{$path-icon}#{"react-icon.svg"};
 $typescript: #{$path-icon}#{"typescript-icon.svg"};
 $nextjs: #{$path-icon}#{"nextjs-icon.svg"};
-$git: #{$path-icon}#{"git-icon.svg"};
 $python: #{$path-icon}#{"python-icon.svg"};
 $selenium: #{$path-icon}#{"selenium-icon.svg"};
 $figma: #{$path-icon}#{"figma-icon.svg"};
 $quote-left: #{$path-icon}#{"quote-left.svg"};
 $quote-right: #{$path-icon}#{"quote-right.svg"};
 $github: #{$path-icon}#{"github-mark.svg"};
+$jquery: #{$path-icon}#{"jquery-icon.png"};
 
 //screen
 $max-m: 767px;
@@ -29,4 +29,8 @@ $max-t: 1219px;
 $min-pc: 1220px;
 
 //color
-$theme: #96B6C5
+$theme: #c2e5f5;
+$title: #333333;
+$semi-title: #757575;
+$text: #5d5d5d;
+

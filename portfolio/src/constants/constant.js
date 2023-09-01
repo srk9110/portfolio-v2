@@ -18,6 +18,7 @@ const constant = {
                 {name: 'css'},
                 {name: 'sass'},
                 {name: 'javascript'},
+                {name: 'jquery'},
                 {name: 'react'},
                 {name: 'typescript'},
                 {name: 'nextjs'},
@@ -33,12 +34,18 @@ const constant = {
         },
         {
             id: 4,
-            type: 'Tool',
+            type: 'Version Control Tool',
             data: [
-                {name: 'git'},
+                {name: 'git'}
+            ]
+        },
+        {
+            id: 5,
+            type: ' Design Communication Tool',
+            data: [
                 {name: 'figma'}
             ]
-        }    
+        }      
     ],
     projects:  [ 
         {
@@ -49,7 +56,7 @@ const constant = {
             work: "서비스/어드민 페이지 퍼블리싱 및 프론트엔드 개발, 웹 크롤링, 유지보수, 기능 추가, 문의 및 설치 요청 대응",
             workPlace: "Linco",
             date: "2021.07 ~ 2023.08",
-            skill: ["react", "scss", "Laravel-blade"],
+            skill: ["react", "scss", "jquery", "Laravel-blade"],
             desc: "위젯을 통한 리뷰 작성과 조회, 리뷰 관리 시스템을 제공하는 cafe24 리뷰 관리 서비스입니다.",
             link: "https://co-co.co.kr/",
             imagePath: ["../images/project/coco-1.png", "../images/project/coco-2.png", "../images/project/coco-3.png", "../images/project/coco-4.png", "../images/project/coco-5.png", "../images/project/coco-6.png", "../images/project/coco-7.png", "../images/project/coco-8.png"]
@@ -106,7 +113,7 @@ const constant = {
             work: "어드민 페이지 퍼블리싱 및 프론트엔드 개발, 유지보수",
             workPlace: "Linco",
             date: "2022.06 ~ 2022.07",
-            skill: ["react", "scss", "Laravel-blade"],
+            skill: ["react", "scss"],
             desc: "루먼랩의 아이들의 ABA 기반 문제행동 개선에 대한 교육 컨텐츠를 제공하는 서비스입니다.",
             link: "http://13.124.117.49",
             linkAnd: "https://play.google.com/store/apps/details?id=com.lumanlab.goodtime&hl=ko-KR",
@@ -121,7 +128,7 @@ const constant = {
             work: "서비스 페이지 퍼블리싱 및 프론트엔드 개발, 유지보수",
             workPlace: "Linco",
             date: "2021.08 ~ 2022.06",
-            skill: ["react", "scss", "Laravel-blade"],
+            skill: ["react", "scss",  "jquery", "Laravel-blade"],
             desc: "출연 아티스트 및 제작 스태프 구인구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 관리할 수 있습니다.",
             link: "https://clkr.co.kr",
             imagePath: ["../images/project/clkr-1.png", "../images/project/clkr-2.png", "../images/project/clkr-3.png", "../images/project/clkr-4.png", "../images/project/clkr-5.png"]
