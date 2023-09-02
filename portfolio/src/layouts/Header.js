@@ -6,7 +6,6 @@ import {scroll} from '../utils/scroll';
 function Header(props){
     const [sticky, setSticky] = useState("");
     const [toggle, setToggle] = useState(false);
-
     const outsideRef = useRef(null);
 
     useEffect(() => {
@@ -16,18 +15,12 @@ function Header(props){
         };
     }, []);
 
-    useEffect(() => {
-        const handleClickOutside = (e) => {
-            if (outsideRef.current &&
-                !outsideRef.current.contains(e.target)) {
-                setToggle(false); 
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside);
+    useEffect(()=> {
+        window.addEventListener('mousedown', handleClose);
         return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
+            window.removeEventListener('mousedown', handleClose);
         };
-    }, [outsideRef]);
+    });
 
     const isSticky = () => {
         const scrollTop = window.scrollY;
@@ -40,7 +33,21 @@ function Header(props){
         setToggle(false);
     };
 
-    const toggleHandler = () => { 
+    const handleClose = async e => {
+        let target = document.querySelector(".side-btn");
+        if(e.target === target 
+        || e.target === target.childNodes[0] 
+        || e.target === target.childNodes[0].childNodes[0]) return;
+
+        let sideArea = outsideRef.current;
+        let sideCildren = outsideRef.current.contains(e.target);
+        if (toggle && (!sideArea || !sideCildren)) {
+            await setToggle(false);
+        }
+    }
+
+    const toggleHandler = (e) => {
+        e.stopPropagation();
         setToggle(prev => !prev);
     };
 
@@ -54,7 +61,7 @@ function Header(props){
                     <div className="btn" onClick={() => scrollHandler("skill")}>SKILLS</div>
                     <div className="btn" onClick={() => scrollHandler("project")}>PROJECTS</div>
                 </div>
-                <div className="side-btn" onClick={() => toggleHandler()}>  
+                <div className="side-btn" onClick={(e) => toggleHandler(e)}>  
                     <FontAwesomeIcon icon={faBars} style={{color: "#272727",}} />
                 </div>
             </div>

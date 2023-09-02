@@ -16,7 +16,6 @@
             text-align: center;
             word-break: keep-all;
             font-weight: bold;
-            z-index: 2;
             .title {
                 font-size: 8rem;
                 @include screen(m){
@@ -43,9 +42,8 @@
             }
         }
         .scroll-down-wrap {
-            z-index: 2;
             position: absolute;
-            bottom: 80px;
+            bottom: 110px;
             color: white;
             text-align: center;
             cursor: pointer;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import CONSTANT from '../constants/constant';
 import { goUrl } from '../utils/goUrl';
@@ -16,7 +16,41 @@ const settings = {
     }
 
 function Project(props){
+    const [mouseDown, setMouseDown] = useState({clientXonMouseDown: null, clientYonMouseDown: null}); 
     const projects = CONSTANT.projects;
+
+    const handleOnMouseDown = e => {
+        setMouseDown({
+            clientXonMouseDown: e.clientX,
+            clientYonMouseDown: e.clientY
+        })
+        e && e.preventDefault();
+    };
+
+    const handleOnClick = (e, image, index) => {
+        e.stopPropagation();
+        if (mouseDown.clientXonMouseDown !== e.clientX ||
+            mouseDown.clientYonMouseDown !== e.clientY) {
+            e && e.preventDefault();
+        } else {
+            openDetail(e, image, index);
+        }
+    };
+
+    const openDetail = (e, image, index) => {
+        e && e.preventDefault();
+        let options = 'status=no,titlebar=no,toolbar=no,menubar=no,resizable=no';
+
+        if (window.innerWidth > 767) {
+            const popupWidth = 1000;
+            const popupHeight = 680;
+            const popupX = window.outerWidth / 2 + window.screenX - ( 1000 / 2);
+            const popupY= window.outerHeight / 2 + window.screenY - ( 680 / 2);
+            options += `,width=${popupWidth},height=${popupHeight},left=${popupX},top=${popupY}`;
+        }
+
+        window.open(`${process.env.PUBLIC_URL}${image}`, '_blank', options);
+    };
 
     return (
         <article id="project" className="common">
@@ -40,7 +74,10 @@ function Project(props){
                             <Slider {...settings}>
                             {
                                 project.imagePath.length && project.imagePath.map((image, imageIndex) => (
-                                    <div className="project-image-wrap" key={imageIndex}>
+                                    <div className="project-image-wrap" 
+                                        key={imageIndex}
+                                        onMouseDown={e => handleOnMouseDown(e)}
+                                        onClick={e => handleOnClick(e, image, 0)}>
                                         <div className="project-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}${image})`}}/>
                                     </div>
                                 ))
