@@ -158,9 +158,11 @@
                                 }
                             }
                         }
+                        div {
+                            line-height: 26px;
+                        }
                         .work {
                             word-break: keep-all;
-                            line-height: 26px;
                         }
                         .tag-wrap {
                             display: flex;
