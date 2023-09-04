@@ -48,10 +48,10 @@
             text-align: center;
             cursor: pointer;
             opacity: 0;
-            animation: fadeIn .5s ease-in .8s forwards; 
-            -moz-animation: fadeIn .5s ease-in .8s forwards; /* Firefox */
-            -webkit-animation: fadeIn .5s ease-in .8s forwards; /* Safari and Chrome */
-            -o-animation: fadeIn .5s ease-in .8s forwards; /* Opera */
+            animation: fadeIn .5s ease-in 1.2s forwards; 
+            -moz-animation: fadeIn .5s ease-in 1.2s forwards; /* Firefox */
+            -webkit-animation: fadeIn .5s ease-in 1.2s forwards; /* Safari and Chrome */
+            -o-animation: fadeIn .5s ease-in 1.2s forwards; /* Opera */
             .scroll-down {
                 margin-bottom: 10px;
                 font-weight: bold;
