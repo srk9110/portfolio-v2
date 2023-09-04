@@ -2,16 +2,6 @@ const constant = {
     skill: [
         {
             id: 1,
-            type: 'Publishing',
-            data: [
-                {name: 'html'},
-                {name: 'css'},
-                {name: 'sass'},
-                {name: 'javascript'},
-            ]
-        }, 
-        {
-            id: 2,
             type: 'Front-End',
             data: [
                 {name: 'html'},
@@ -25,7 +15,7 @@ const constant = {
             ]
         },
         {
-            id: 3,
+            id: 2,
             type: 'Web Crawling',
             data: [
                 {name: 'python'},
@@ -33,14 +23,14 @@ const constant = {
             ]
         },
         {
-            id: 4,
+            id: 3,
             type: 'Version Control Tool',
             data: [
                 {name: 'git'}
             ]
         },
         {
-            id: 5,
+            id: 4,
             type: ' Design Communication Tool',
             data: [
                 {name: 'figma'}
