@@ -42,8 +42,8 @@ const constant = {
         {
             id: 1,
             type: ['web'],
-            title: "어디서 먹을까",
-            engTitle: "what-to-eat",
+            title: "어디서 뭐 먹을까",
+            engTitle: "whatToEat",
             work: "서비스 기획, 개발 및 배포",
             workPlace: "사이드 프로젝트",
             date: "2023.09 ~ 2023.10",
