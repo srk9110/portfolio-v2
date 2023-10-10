@@ -37,7 +37,7 @@ function Project(props){
         }
     };
 
-    const openDetail = (e, image, index) => {
+    const openDetail = (e, image) => {
         e && e.preventDefault();
         let options = 'status=no,titlebar=no,toolbar=no,menubar=no,resizable=no';
 

@@ -7,6 +7,7 @@ const constant = {
                 {name: 'html'},
                 {name: 'css'},
                 {name: 'sass'},
+                {name: 'tailwind'},
                 {name: 'javascript'},
                 {name: 'jquery'},
                 {name: 'react'},
@@ -40,6 +41,19 @@ const constant = {
     projects:  [ 
         {
             id: 1,
+            type: ['web'],
+            title: "어디서 먹을까",
+            engTitle: "what-to-eat",
+            work: "서비스 기획, 개발 및 배포",
+            workPlace: "사이드 프로젝트",
+            date: "2023.09 ~ 2023.10",
+            skill: ["nextjs", "typescript", "tailwind"],
+            desc: "방문할 지역의 음식점과 카페를 무작위로 골라주는 사이드 프로젝트입니다. kakao api (검색, 지도) 기능을 이용하였습니다.",
+            link: "https://what-to-eat-sigma.vercel.app/",
+            imagePath: ["/images/project/what-to-eat-1.PNG", "/images/project/what-to-eat-2.PNG", "/images/project/what-to-eat-3.PNG", "/images/project/what-to-eat-4.PNG"]
+        },  
+        {
+            id: 2,
             type: ['web', 'cafe24'],
             title: "코코리뷰",
             engTitle: "CocoReview",
@@ -52,7 +66,7 @@ const constant = {
             imagePath: ["/images/project/coco-1.png", "/images/project/coco-2.png", "/images/project/coco-3.png", "/images/project/coco-4.png", "/images/project/coco-5.png", "/images/project/coco-6.png", "/images/project/coco-7.png", "/images/project/coco-8.png"]
         },  
         {
-            id: 2,
+            id: 3,
             type: ['web', 'android', 'ios'],
             title: "마이링크",
             engTitle: "Milink",
@@ -67,7 +81,7 @@ const constant = {
             imagePath: ["/images/project/milink-1.png", "/images/project/milink-2.png", "/images/project/milink-3.png", "/images/project/milink-4.png", "/images/project/milink-5.png", "/images/project/milink-6.png", "/images/project/milink-7.png", "/images/project/milink-8.png"]
         },           
         {
-            id: 3,
+            id: 4,
             type: ['web', 'android', 'ios'],
             title: "마이북",
             engTitle: "Mibook",
@@ -82,7 +96,7 @@ const constant = {
             imagePath: ["/images/project/mibook-1.png", "/images/project/mibook-2.png", "/images/project/mibook-3.png", "/images/project/mibook-4.png", "/images/project/mibook-5.png", "/images/project/mibook-6.png"]
         },    
         {
-            id: 4,
+            id: 5,
             type: ['android', 'ios'],
             title: "쏜다",
             engTitle: "Ssonda",
@@ -96,7 +110,7 @@ const constant = {
             imagePath: ["/images/project/ssonda-1.png", "/images/project/ssonda-2.png", "/images/project/ssonda-3.png", "/images/project/ssonda-4.png"]
         },      
         {
-            id: 5,
+            id: 6,
             type: ['web', 'android', 'ios'],
             title: "굿타임",
             engTitle: "GoodTime",
@@ -111,7 +125,7 @@ const constant = {
             imagePath: ["/images/project/goodTime-1.png", "/images/project/goodTime-2.png", "/images/project/goodTime-3.png", "/images/project/goodTime-4.png"]
         },
         {
-            id: 6,
+            id: 7,
             type: ['web'],
             title: "클릭커",
             engTitle: "Clkr",
@@ -124,7 +138,7 @@ const constant = {
             imagePath: ["/images/project/clkr-1.png", "/images/project/clkr-2.png", "/images/project/clkr-3.png", "/images/project/clkr-4.png", "/images/project/clkr-5.png"]
         },
         {
-            id: 7,
+            id: 8,
             type: ['web'],
             title: "대단한 클로버",
             engTitle: "The Greate Clover",
