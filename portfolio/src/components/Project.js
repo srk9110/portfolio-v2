@@ -59,7 +59,7 @@ function Project(props){
             <div className="flexWrap">
             {
                 projects.length && projects.map((project, index) => (
-                    <div className="contents-wrap" key={index} data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div className="contents-wrap" key={index}>
                         <div className="title-wrap">
                             <div className="title">{project.title} - {project.engTitle}</div>
                             <div className="line"/>
