@@ -5,6 +5,7 @@ import { goUrl } from '../utils/goUrl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faBuilding, faPenToSquare, faCode, faLink, faCheck, faHouse,
     faLock, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const settings = {
     arrows: false,
@@ -153,6 +154,13 @@ function Project(props){
                                             project.linkIos ? 
                                                 <div className="url" onClick={() => goUrl(project.linkIos)}>
                                                     <FontAwesomeIcon icon={faMobileScreenButton} style={{color: "#555555",}} />
+                                                </div>
+                                            : null
+                                        }
+                                        {
+                                            project.linkGit ? 
+                                                <div className="url" onClick={() => goUrl(project.linkGit)}>
+                                                    <FontAwesomeIcon icon={faGithub} style={{color: "#555555",}} />
                                                 </div>
                                             : null
                                         }

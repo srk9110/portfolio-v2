@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {goUrl} from '../utils/goUrl';
 
 function Footer() {
-
     return (
         <article id="footer">
             <div className="contact-wrap">

@@ -50,6 +50,7 @@ const constant = {
             skill: ["nextjs", "typescript", "tailwind"],
             desc: "방문할 지역의 음식점과 카페를 무작위로 골라주는 사이드 프로젝트입니다. kakao api (검색, 지도) 기능을 이용하였습니다.",
             link: "https://what-to-eat-sigma.vercel.app/",
+            linkGit: "https://github.com/srk9110/what-to-eat",
             imagePath: ["/images/project/what-to-eat-1.PNG", "/images/project/what-to-eat-2.PNG", "/images/project/what-to-eat-3.PNG", "/images/project/what-to-eat-4.PNG"]
         },  
         {
@@ -133,7 +134,7 @@ const constant = {
             workPlace: "Linco",
             date: "2021.08 ~ 2022.06",
             skill: ["react", "scss",  "jquery", "Laravel-blade"],
-            desc: "출연 아티스트 및 제작 스태프 구인구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 관리할 수 있습니다.",
+            desc: "출연 아티스트 및 제작 스태프 구인 구직 플랫폼 서비스입니다. 구인 구직시 제출하는 프로필과 포트폴리오를 제작, 관리할 수 있습니다.",
             link: "https://clkr.co.kr",
             imagePath: ["/images/project/clkr-1.png", "/images/project/clkr-2.png", "/images/project/clkr-3.png", "/images/project/clkr-4.png", "/images/project/clkr-5.png"]
         },
