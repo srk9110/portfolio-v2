@@ -5,7 +5,7 @@ function Skill(props){
     const skillList = CONSTANT.skill;
 
     return (
-        <article id="skill" className="common">
+        <section id="skill" className="common">
             <h2>SKILLS</h2>
             {
                 skillList.length && skillList.map((skill, index) => (
@@ -14,7 +14,7 @@ function Skill(props){
                         <div className="contents">
                         {
                             skill.data?.length && skill.data.map((item, itemIndex) => (
-                                <div className="skill-wrap">
+                                <div className="skill-wrap" key={itemIndex}>
                                     <div className="icon-wrap" key={`item_${itemIndex}`}>
                                         <div className={`icon ${item.name}`}/>
                                     </div>  
@@ -26,7 +26,7 @@ function Skill(props){
                     </div>    
                 ))
             }
-        </article>
+        </section>
     )
 }
 

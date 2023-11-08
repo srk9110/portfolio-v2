@@ -2,7 +2,7 @@ import React from 'react';
 
 function Career(props){
     return(
-        <article id="career" className="common">
+        <section id="career" className="common">
             <h2>CAREER</h2>
             <div className="contents-wrap" data-aos="zoom-in-up">
                 <div className="content">
@@ -27,7 +27,7 @@ function Career(props){
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
     )
 }
 

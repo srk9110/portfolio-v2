@@ -9,7 +9,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Main(props){
     return (
-        <article id="main">
+        <section id="main">
             <div className="image-wrap">
                 <div className="title-wrap">
                     <h2 className="title">FRONT-END DEV</h2>
@@ -27,7 +27,7 @@ function Main(props){
             <Career/>
             <Skill/>
             <Project/>
-        </article>
+        </section>
     )
 }
 

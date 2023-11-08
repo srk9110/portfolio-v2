@@ -52,7 +52,7 @@ function Header(props){
     };
 
     return (
-        <article id="header">
+        <section id="header">
             <div className={`contents-wrap ${sticky}`}>
                 <div className="logo" onClick={() => scrollHandler("main")}>KSR's PORTFOLIO</div>
                 <div className="btn-wrap">
@@ -73,7 +73,7 @@ function Header(props){
                     <div className="btn" onClick={() => scrollHandler("project")}>PROJECTS</div>
                 </div>
             </div>
-        </article>
+        </section>
     )
 }
 

@@ -54,7 +54,7 @@ function Project(props){
     };
 
     return (
-        <article id="project" className="common">
+        <section id="project" className="common">
             <h2>PROJECTS</h2>
             <div className="flexWrap">
             {
@@ -172,7 +172,7 @@ function Project(props){
                 ))
             }
             </div>
-        </article>
+        </section>
     )
 }
 

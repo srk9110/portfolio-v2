@@ -12,14 +12,18 @@
             &.git {
                 background: url($github) no-repeat center;
                 background-size: cover;
-                width: 48px;
-                height: 48px;
-                cursor: pointer;
+            }
+            &.blog {
+                background: url($blog) no-repeat center;
+                background-size: cover;
             }
             svg {
                 height: 48px;
                 display: inline-block;
             }
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
         }
     }
     .right {

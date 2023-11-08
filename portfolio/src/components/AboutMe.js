@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faSchool, faIdCard, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 function AboutMe(props){
+    const [weight, setWeight] = useState(0);
+
+    const inputHandler = e => {
+        setWeight(e.target.value);
+    }
+
     return(
-        <article id="aboutMe" className="common">
+        <section id="aboutMe" className="common">
             <h2>ABOUT ME</h2>
             <div className="contents-wrap" data-aos="zoom-in">
                 <div className="info-wrap">
@@ -42,7 +48,7 @@ function AboutMe(props){
                     <div className="quote right"/>
                 </div>
             </div>
-        </article>
+        </section>
     )
 }
 
