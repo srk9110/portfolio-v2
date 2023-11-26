@@ -1,34 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.7cfec52a.css",
-    "main.js": "/portfolio-v2/static/js/main.f944a87c.js",
+    "main.css": "/portfolio-v2/static/css/main.1fbc8525.css",
+    "main.js": "/portfolio-v2/static/js/main.b37c8c5e.js",
     "static/media/bg.png": "/portfolio-v2/static/media/bg.5985fb6c37cad73bebcb.png",
     "static/media/linco.PNG": "/portfolio-v2/static/media/linco.9f5647e6fad9f6066660.PNG",
-    "static/media/quote-left.svg": "/portfolio-v2/static/media/quote-left.832c905e1e63a5a951fc.svg",
-    "static/media/quote-right.svg": "/portfolio-v2/static/media/quote-right.e22a71a85b107891dc86.svg",
-    "static/media/sass-icon.svg": "/portfolio-v2/static/media/sass-icon.3572f53ec4f404e921a9.svg",
-    "static/media/react-icon.svg": "/portfolio-v2/static/media/react-icon.19465659ecf7a1122618.svg",
-    "static/media/selenium-icon.svg": "/portfolio-v2/static/media/selenium-icon.6b7de832e0e93fb26e53.svg",
-    "static/media/typescript-icon.svg": "/portfolio-v2/static/media/typescript-icon.f3bc0fd998dea6b12669.svg",
-    "static/media/python-icon.svg": "/portfolio-v2/static/media/python-icon.e78f188fa5e62ee2613d.svg",
-    "static/media/html-icon.svg": "/portfolio-v2/static/media/html-icon.04ad4ab83f740c867197.svg",
-    "static/media/css-icon.svg": "/portfolio-v2/static/media/css-icon.926611385610b2f0ba73.svg",
+    "static/media/quote-left.svg": "/portfolio-v2/static/media/quote-left.6d446ceee0471badee66.svg",
+    "static/media/quote-right.svg": "/portfolio-v2/static/media/quote-right.460084644baad7868423.svg",
+    "static/media/sass-icon.svg": "/portfolio-v2/static/media/sass-icon.8351205a93eafac2e392.svg",
+    "static/media/react-icon.svg": "/portfolio-v2/static/media/react-icon.e27571eaed899c642345.svg",
+    "static/media/selenium-icon.svg": "/portfolio-v2/static/media/selenium-icon.47a7b9096918004b3708.svg",
+    "static/media/typescript-icon.svg": "/portfolio-v2/static/media/typescript-icon.17d5e87eac2c9d1dc722.svg",
+    "static/media/python-icon.svg": "/portfolio-v2/static/media/python-icon.6a8b2999db46fb931134.svg",
+    "static/media/html-icon.svg": "/portfolio-v2/static/media/html-icon.e7638e3676622c76a46e.svg",
+    "static/media/css-icon.svg": "/portfolio-v2/static/media/css-icon.e7a9de36d9335d92932e.svg",
     "static/media/slick.svg": "/portfolio-v2/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio-v2/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/portfolio-v2/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/javascript-icon.svg": "/portfolio-v2/static/media/javascript-icon.1d3d28798f08ea1ed7cd.svg",
-    "static/media/figma-icon.svg": "/portfolio-v2/static/media/figma-icon.7de1da122c5d109880fe.svg",
+    "static/media/javascript-icon.svg": "/portfolio-v2/static/media/javascript-icon.fd46ca41839433d73577.svg",
+    "static/media/figma-icon.svg": "/portfolio-v2/static/media/figma-icon.2bf482e5fb0de1033b4f.svg",
     "static/media/slick.woff": "/portfolio-v2/static/media/slick.295183786cd8a1389865.woff",
     "static/media/github-mark.svg": "/portfolio-v2/static/media/github-mark.6fa18895f6e6c7772cab.svg",
     "index.html": "/portfolio-v2/index.html",
     "static/media/tailwind-icon.svg": "/portfolio-v2/static/media/tailwind-icon.79614a5f61617ba49a08.svg",
-    "static/media/blog.svg": "/portfolio-v2/static/media/blog.4e21617790b7f3ca36b7.svg",
-    "static/media/nextjs-icon.svg": "/portfolio-v2/static/media/nextjs-icon.500759aba71b93b9027f.svg",
-    "main.7cfec52a.css.map": "/portfolio-v2/static/css/main.7cfec52a.css.map",
-    "main.f944a87c.js.map": "/portfolio-v2/static/js/main.f944a87c.js.map"
+    "static/media/blog.svg": "/portfolio-v2/static/media/blog.f74bb9dd36e1ee04f4fa.svg",
+    "static/media/nextjs-icon.svg": "/portfolio-v2/static/media/nextjs-icon.e41cb890b5e6015facaf.svg",
+    "main.1fbc8525.css.map": "/portfolio-v2/static/css/main.1fbc8525.css.map",
+    "main.b37c8c5e.js.map": "/portfolio-v2/static/js/main.b37c8c5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cfec52a.css",
-    "static/js/main.f944a87c.js"
+    "static/css/main.1fbc8525.css",
+    "static/js/main.b37c8c5e.js"
   ]
 }
